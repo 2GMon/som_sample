@@ -6,10 +6,19 @@
          <script src="http://d3js.org/d3.v3.min.js" charset="utf-8"></script>
          <script type="text/javascript" src="./som.js"></script>
          <script type="text/javascript" src="./visualize_som_grid.js"></script>
+         <script type="text/javascript" src="./visualize_som_color.js"></script>
       </head>
       <body>
           <p>To add dataset, click in the area.</p>
           <svg id="visualize_grid_som"></svg>
           <button id="grid_som_control"></button><button id="grid_som_reset"></button>
+          <svg id="visualize_color_som"></svg>
+          <div class="color">
+              alpha : <input type="text" id="color_alpha" value="0.3"></form><br/>
+              sigma : <input type="text" id="color_sigma" value="0.8"></form><br/>
+              rows  : <input type="number" id="color_rows" value="10"></form><br/>
+              cols  : <input type="number" id="color_cols" value="10"></form><br/>
+              <button id="color_som_control"></button><button id="color_som_reset"></button>
+          </div>
       </body>
 </html>
